@@ -198,7 +198,7 @@ body {
   color: #222222;
 }
 
-.bold {
+.promo__bold {
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
@@ -343,4 +343,121 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #F26376;
+}
+
+.feature {
+  background: #222224;
+}
+
+.feature__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 104px 0;
+  text-align: center;
+}
+
+
+.feature__item {
+  width: 360px;
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.feature__title {
+  font-weight: 400;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #FBFBFB;
+}
+
+.feature__text {
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  color: #FBFBFB;
+}
+
+.feedback {
+  background-image: url('../images/feedback-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+
+.feedback__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 97px 0 126px;
+
+}
+
+.feedback__info {
+  width: 360px;
+  text-align: center;
+}
+
+.feedback__blockquote {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #222224;
+  margin-top: 30px;
+}
+
+.feedback__suubscribe {
+  width: 557px;
+  text-align: center;
+}
+
+.subscribe__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #222224;
+
+}
+
+.subscribe__bold {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 33px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.subscribe__email {
+  border: none;
+  background: #E1E1E1;
+  color: #222224;
+  opacity: 0.67;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 17px 131px 15px 22px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+
+.subscribe__btn {
+  border: none;
+  color: #FFFFFF;
+  padding: 17px 13px 15px 14px;
+  background: #F16D7F;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
