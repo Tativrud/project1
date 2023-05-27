@@ -590,11 +590,7 @@ body {
   margin-left: 10px;
 }
 
-.pagination {
 
-  /*  padding: 12px 16px;
-  display: inline-block; */
-}
 
 .pagination__list {
   width: 284px;
@@ -605,16 +601,16 @@ body {
   padding: 12px 0;
 }
 
-.pagination__item:nth-child(8) {
-  padding: 0;
-}
-
 .pagination__link,
-.pagination__item span {
+.pagination__multipoint {
   color: #C4C4C4;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+}
+
+.pagination__multipoint {
+  margin: 0 -20px;
 }
 
 
