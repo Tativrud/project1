@@ -1,0 +1,70 @@
+@import "_war.scss";
+
+@import "_mixin.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: $mainfont;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  outline: 1px solid red;
+}
+
+@import "blocks/header";
+
+@import "blocks/_promo";
+
+@import "blocks/categories";
+
+@import "blocks/product";
+
+@import "blocks/features";
+
+@import "blocks/feedback";
+
+@import "blocks/subscribe";
+
+@import "blocks/footer";
+
+@import "blocks/breadcrumbs";
+
+@import "blocks/filter";
+
+@import "blocks/_pagination.scss";
+
+@import "blocks/_slider.scss";

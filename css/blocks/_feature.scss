@@ -1,0 +1,36 @@
+.feature {
+  background: #222224;
+}
+
+.feature__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 104px 0;
+  text-align: center;
+}
+
+
+.feature__item {
+  width: 360px;
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.feature__title {
+  font-weight: 400;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #FBFBFB;
+}
+
+.feature__text {
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  color: #FBFBFB;
+}

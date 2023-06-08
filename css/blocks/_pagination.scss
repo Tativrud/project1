@@ -1,0 +1,22 @@
+.pagination__list {
+  width: 284px;
+  border: 1px solid #EBEBEB;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.pagination__link,
+.pagination__multipoint {
+  @include fontoptions (300, 16px, 19px, #C4C4C4);
+}
+
+.pagination__multipoint {
+  margin: 0 -20px;
+}
+
+
+.pagination__item-curent {
+  color: $maincolor;
+}

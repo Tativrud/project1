@@ -1,0 +1,131 @@
+.header {
+  background: #222222;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basic__list {
+  min-width: 111px;
+  margin: 18px 0 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  min-width: 168px;
+  margin: 18px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* #menu__toogle {
+  opacity: 0;
+} */
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 420px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+
+.menu__btn>span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn>span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__burger {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  width: 232px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #eceff1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+
+.menu__link {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.menu__link:hover {
+  background-color: #cfd8dc;
+}
+
+#menu__toogle:checked~.menu__btn>span {
+  transform: rotate(45deg);
+}
+
+#menu__toogle:checked~.menu__btn>span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toogle:checked~.menu__btn>span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toogle:checked~.menu__burger {
+  visibility: visible;
+  right: 0;
+}
+
+.menu__basket {
+  position: relative;
+}
+
+.menu__busket-number {
+  position: absolute;
+  bottom: 20px;
+  right: -5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  width: 19px;
+  height: 19px;
+  background: #F16D7F;
+  text-align: center;
+  border-radius: 50%;
+}
