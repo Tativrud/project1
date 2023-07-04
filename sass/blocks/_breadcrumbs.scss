@@ -13,3 +13,13 @@
   line-height: 17px;
   color: #F16D7F;
 }
+
+.breadcrumbs__link{
+    transition-property: color;
+      transition-duration: 0.3s;
+    
+      &:hover {
+        color: blue;
+        text-decoration: underline;
+      }
+}

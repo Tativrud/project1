@@ -1,0 +1,14 @@
+.cart__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__product {
+  width: 652px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 20px 20px 20px #E1E1E1;
+}
+.cart__product + .cart__product {
+  margin-top: 40px;
+}/*# sourceMappingURL=cart.css.map */

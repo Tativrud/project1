@@ -27,20 +27,42 @@
   background: #FFFFFF;
   width: 32px;
   height: 32px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  outline: 2px solid #FFFFFF;
+  border-radius: 50%;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
 }
 
 .social__icon {
   fill: #000000;
+  margin: auto;
 }
 
 .footer__social-item:hover {
-  background: #F16D7F;
-
+outline-offset: 4px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
+  
 
 .footer__social-item:hover .social__icon {
   fill: #FFFFFF;
+  animation: shake 0.5s;
+}
+
+@keyframes shake{
+  10% {
+    transform: rotate(15deg);
+  }
+  30% {
+transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  70% {
+    transform: rotate(-15deg);
+  }
 }

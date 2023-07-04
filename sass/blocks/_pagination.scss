@@ -16,6 +16,10 @@
   margin: 0 -20px;
 }
 
+.pagination__link:hover{
+color: red;
+font-weight: 700;
+}
 
 .pagination__item-curent {
   color: $maincolor;
