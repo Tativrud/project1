@@ -4,3 +4,7 @@
   line-height: $lineheight;
   color: $color;
 }
+@mixin side{
+  display: flex;
+  justify-content: space-between;
+}

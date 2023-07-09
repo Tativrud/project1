@@ -70,87 +70,78 @@
   <section class="promo">
     <div class="container">
       <h1 class="catalog__title">
-        SHOPPING CART
+        REGISTRATION
       </h1>
     </div>
   </section>
-  <main class="cart">
-
-    <div class="container cart__inner">
-      <div class="cart__column">
-        <form class="cart__form" action="#">
-          <div class="cart__product cart__product-first">
-            <img class="cart__product-img" src="images/product-3.jpg" alt="">
-            <div class="cart__product-description">
-              <h2 class="cart__product-title">
-                MANGO PEOPLE T-SHIRT
-              </h2>
-              <p class="cart__product-descr">
-                Price: <span>$300</span>
-              </p>
-              <p class="cart__product-descr">
-                Color: Red
-              </p>
-              <p class="cart__product-descr">
-                Size: Xl
-              </p>
-              <label for="quantity">Quantity:</label>
-              <input class="cart__product-qty" id="quantity" type="number" value="2" min="1">
-            </div>
-            <img class="cart__product-cross" src="images/cross.svg" alt="">
+  <main>
+    <div class="registration container">
+      <div class="registration__column registration__column-first">
+        <form class="registration__form" action="#">
+          <h3 class="registration__title">
+            Your Name
+          </h3>
+          <input class="registration__input" type="text" placeholder="First Name">
+          <input class="registration__input" type="text" placeholder="Last Name">
+          <div class="registration__sex">
+            <input id="male" type="radio" name="sex">
+            <label for="male">Male</label>
+            <input id="female" type="radio" name="sex">
+            <label for="female">Female</label>
           </div>
 
-          <div class="cart__product ">
-            <img class="cart__product-img" src="images/product_man-2.jpg" alt="">
-            <div class="cart__product-description">
-              <h2 class="cart__product-title">
-                MANGO PEOPLE T-SHIRT
-              </h2>
-              <p class="cart__product-descr">
-                Price: <span>$300</span>
-              </p>
-              <p class="cart__product-descr">
-                Color: Red
-              </p>
-              <p class="cart__product-descr">
-                Size: Xl
-              </p>
-
-              <label for="quantity">Quantity:</label>
-              <input class="cart__product-qty" id="quantity" type="number" value="2" min="1">
-
-            </div>
-            <img class="cart__product-cross" src="images/cross.svg" alt="">
-          </div>
-
-          <div class="cart__product-button">
-            <input class="cart__product-btn cart__product-btn-inp" type="reset" value="CLEAR SHOPPING CART">
-            <a class="cart__product-btn" href="">CONTINUE SHOPPING</a>
-          </div>
-      </div>
-      </form>
-
-
-      <div class="cart__column">
-        <form class="cart__adress" action=""">
-          <h3 class=" cart__adress-title">
-          SHIPPING ADRESS</h3>
-          <input class=" cart__adress-input" type="text" placeholder="Bangladesh">
-          <input class=" cart__adress-input" type="text" placeholder="State">
-          <input class=" cart__adress-input" type="text" placeholder="Postcode / Zip">
-          <input class="cart__adress-btn" type="button" value="GET A QUOTE">
+          <h3 class="registration__title">
+            Login details
+          </h3>
+          <input class="registration__input" type="email" placeholder="Email">
+          <input class="registration__input" type="password" placeholder="Password">
+          <p class="registration__hint">
+            Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+          </p>
+          <button class="registration__btn">JOIN NOW <img src="images/arrow.svg" alt=""></button>
         </form>
-        <div class="cart__checkout" action="">
-
-          <p class="cart__checkout-sub">
-            SUB TOTAL &ensp; $900
-          </p>
-          <p class="cart__checkout-total">
-            GRAND TOTAL &ensp; <span>$900</span>
-          </p>
-          <a class="cart__checkout-btn" href="">PROCEED TO CHECKOUT</a>
-        </div>
       </div>
+      <div class="registration__column">
+
+        <div class="registration__loyalty">
+          <p class="registration__loyalty-title">
+            LOYALTY HAS ITS PERKS
+          </p>
+          <p class="registration__loyalty-text">
+            Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as
+            soon
+            as you
+            join:
+          </p>
+          <ul class="registration__loyalty-list">
+            <li class="registration__loyalty-item">
+              <img class="registration__loyalty-img" src="images/tick.svg" alt="tick"> <span>15% off welcome offer
+              </span>
+            </li>
+            <li class="registration__loyalty-item">
+              <img class="registration__loyalty-img" src="images/tick.svg" alt="tick"> <span>Free shipping, returns and
+                exchanges on all orders
+              </span>
+            </li>
+            <li class="registration__loyalty-item">
+              <img class="registration__loyalty-img" src="images/tick.svg" alt="tick"> <span>$10 off a purchase on your
+                birthday
+              </span>
+            </li>
+            <li class="registration__loyalty-item">
+              <img class="registration__loyalty-img" src="images/tick.svg" alt="tick"> <span>Early access to products
+              </span>
+            </li>
+            <li class="registration__loyalty-item">
+              <img class="registration__loyalty-img" src="images/tick.svg" alt="tick"> <span>Exclusive offers & rewards
+              </span>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
   </main>
 
 
