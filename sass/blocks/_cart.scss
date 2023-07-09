@@ -1,0 +1,130 @@
+.cart__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__product {
+  width: 652px;
+  display: flex;
+  box-shadow: 20px 20px 20px #E1E1E1;
+  position: relative;
+  &-img{
+    width: 262px;
+    height: auto;
+    }
+
+  &-description{
+    margin-left: 36px;
+      @include fontoptions(400, 22px, 26px, #575757);
+  }
+
+  &-title{
+@include fontoptions(400, 24px, 29px, #222);
+margin: 22px 97px 42px 0;
+}
+  
+  & span{
+    color:#EF5B70;
+  }
+
+  &-qty{
+    width: 48px;
+    height: 24px;
+    margin-left: 24px;
+  text-align: center;
+  @include fontoptions(400, 18px, 22px, #656565);
+  border: 1px, solid, #EAEAEA;
+  }
+
+  &-button{
+  @include side;
+  }
+
+&-btn{
+  padding: 17px 40px;
+  border: 1px solid #A4A4A4;
+  background: #fff;
+  margin: 72px 0 128px;
+  font-family: $mainfont;
+@include fontoptions (400, 14px, 17px, #000);
+}
+
+&-cross{
+  position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 28px;
+    margin-right: 22px;
+}
+
+  &+&{
+    margin-top: 40px;
+  }
+}
+
+.cart__product-first{
+  margin-top: 96px;
+}
+
+
+.cart__adress{
+  margin-top: 113px;
+  &-title{
+    @include fontoptions(300, 16px, 18px, #222);
+  }
+
+  &-input{
+    display: block;
+      width: 360px;
+      height: 44px;
+      margin-top: 20px;
+      padding-left: 18px;
+      &::placeholder{
+        @include fontoptions(300, 13px, 16px, #B1B1B1);
+      }
+  }
+
+  &-btn{
+      padding: 17px 40px;
+        border: 1px solid #A4A4A4;
+        background: #fff;
+        margin-top: 24px;
+        @include fontoptions(300, 11px, 13px, #4A4A4A);
+  }
+}
+
+.cart__checkout{
+  width: 360px;
+  background: #F5F3F3;
+  margin-top: 57px;
+  padding: 39px 43px 42px 44px;
+  &-sub{
+    text-align: right;
+    margin-right: -9px;
+    @include fontoptions(400, 11px, 13px,#4A4A4A);
+  }
+  &-total{
+    text-align: right;
+    margin-top: 12px;
+    margin-right: -6px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #E2E2E2;
+    & span{
+      color:#F16D7F;
+      font-weight: 600;
+    }
+  }
+
+  &-btn{
+    display: inline-block;
+    width: 273px;
+    padding: 15px 43px 16px 41px;
+    background: #F16D7F;
+    margin-top: 39px;
+@include fontoptions(300, 15px, 19px, #fff);
+  }
+}
+
+
+
+

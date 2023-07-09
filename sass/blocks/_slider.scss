@@ -1,0 +1,96 @@
+	.slider {
+	  background-color:#F7F7F7;
+	  width: 100%;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+    padding-bottom: 78px;
+
+    &__box{
+      padding-top: 11px;
+    }
+
+    &__btn{
+    width: 47px;
+    height: 47px;
+    background: rgba(42, 42, 42, 0.15);
+    padding: 10px;
+    border: 1px solid #000;
+    }
+&__next,
+&__prew {
+  width: 12px;
+  height: 22px;
+  fill:black;
+
+  &:hover {
+      fill: #F16D7F;
+    }
+}
+   
+ &-desc {
+   background: #FFFFFF;
+   border: 1px solid #EAEAEA ;
+   margin-top: -78px;
+   margin-bottom: 80px;
+ 
+   &__headline{
+    @include fontoptions(300, 14px, 17px,#F16D7F);
+    text-align: center;
+    margin-top: 64px;
+   }
+
+   &__rectangle{
+        width: 63px;
+        height: 3px;
+        background: $maincolor;
+        margin: 12px auto;
+      }
+
+   &__title{
+    @include fontoptions(300, 18px, 22px, #4D4D4D);
+    text-align: center;
+   }
+
+   &__text{
+    padding: 48px 294px 32px;
+    text-align: center;
+  @include fontoptions(300, 14px, 17px,#5E5E5E);
+}
+
+&__price{
+  @include fontoptions (300, 24px, 2px, $maincolor);
+  text-align: center;
+width: 642px;
+  padding-bottom: 65px;
+  margin: 0 auto 65px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+&__filter-list{
+  width: 373px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include fontoptions(400, 14px, 17px, #6F6E6E);
+  margin: 0 auto;
+  
+}
+
+   &__btn{
+    width: 217px;
+        padding: 15px 57px 14px 24px;
+        border: 1px solid #FF6A6A;
+      @include fontoptions (400, 16px, 19px, #F26376);
+      display: flex;
+      align-items: center;
+        
+      }
+  &__cart-text{
+    padding-left: 22px;
+
+  }
+}
+  &__product{
+    margin: 0 0 128px;
+  }}
